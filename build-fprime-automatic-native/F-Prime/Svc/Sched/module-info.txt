@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Sched/SchedPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Sched/SchedPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Sched/SchedPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Sched/Sched.fpp
+Fw/Port

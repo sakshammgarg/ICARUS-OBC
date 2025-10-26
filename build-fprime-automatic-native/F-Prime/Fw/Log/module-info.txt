@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/LogBuffer.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/LogPacket.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogSeverityEnumAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogTextPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogPortAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogSeverityEnumAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogSeverityEnumAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogTextPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Log/LogTextPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+Fw/Com

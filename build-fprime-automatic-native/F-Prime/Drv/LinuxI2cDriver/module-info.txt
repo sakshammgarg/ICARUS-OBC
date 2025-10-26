@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxI2cDriver/LinuxI2cDriverStub.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxI2cDriver/LinuxI2cDriverComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxI2cDriver/LinuxI2cDriverComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxI2cDriver/LinuxI2cDriverComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxI2cDriver/LinuxI2cDriver.fpp
+

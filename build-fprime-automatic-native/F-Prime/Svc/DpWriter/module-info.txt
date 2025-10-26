@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/DpWriter/DpWriter.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpWriter/DpWriterComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpWriter/DpWriterComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpWriter/DpWriterComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/DpWriter/DpWriter.fpp
+Fw/Dp

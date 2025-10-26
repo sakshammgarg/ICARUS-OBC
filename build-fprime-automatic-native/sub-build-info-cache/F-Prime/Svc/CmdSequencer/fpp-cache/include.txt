@@ -1,0 +1,3 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/CmdSequencer/Commands.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/CmdSequencer/Events.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/CmdSequencer/Telemetry.fppi

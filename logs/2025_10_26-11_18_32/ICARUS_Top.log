@@ -1,0 +1,6 @@
+[MAIN] Configuring TcpServer on 0.0.0.0:50000
+[MAIN] ERROR: Failed to configure TcpServer! Status: -9
+ICARUS-OBC Starting...
+ICARUS-OBC Running. Press Ctrl-C to exit.
+ICARUS-OBC Shutting down...
+ICARUS-OBC Exited.

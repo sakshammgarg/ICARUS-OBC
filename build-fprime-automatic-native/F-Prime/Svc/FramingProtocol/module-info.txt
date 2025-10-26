@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FramingProtocol/DeframingProtocol.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FramingProtocol/FramingProtocol.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FramingProtocol/FprimeProtocol.cpp
+
+
+Fw/Buffer;Fw/Time;Utils/Hash;Utils/Types

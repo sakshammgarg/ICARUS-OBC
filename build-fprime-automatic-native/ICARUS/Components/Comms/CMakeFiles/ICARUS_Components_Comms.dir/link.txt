@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libICARUS_Components_Comms.a CMakeFiles/ICARUS_Components_Comms.dir/Comms.cpp.o CMakeFiles/ICARUS_Components_Comms.dir/CommsComponentAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libICARUS_Components_Comms.a

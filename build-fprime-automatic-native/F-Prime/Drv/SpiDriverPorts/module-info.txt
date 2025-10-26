@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
+

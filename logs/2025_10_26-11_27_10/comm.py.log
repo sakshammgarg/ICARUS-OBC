@@ -1,0 +1,58 @@
+[2025-10-26 11:27:10,118] [INFO] root: Logging system initialized!
+[2025-10-26 11:27:10,119] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-26 11:27:10,119] [INFO] udp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:27:10,119] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:27:10,119] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-26 11:27:10,624] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out
+[2025-10-26 11:27:28,671] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:27:28,672] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:27:46,804] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:27:46,805] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:28:04,923] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:28:04,924] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:28:23,057] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:28:23,059] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:28:41,174] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:28:41,175] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:28:59,314] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:28:59,315] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:29:17,452] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:29:17,453] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:29:35,581] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:29:35,582] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:29:53,721] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:29:53,722] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:30:11,854] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:30:11,855] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:30:29,986] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:30:29,987] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:30:48,113] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:30:48,114] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:31:06,246] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:31:06,246] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:31:24,392] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:31:24,394] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:31:42,517] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:31:42,518] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:32:00,667] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:32:00,668] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:32:18,811] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:32:18,813] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:32:36,950] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:32:36,951] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:32:55,086] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:32:55,086] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:33:13,248] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:33:13,250] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:33:31,378] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:33:31,379] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:33:49,511] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:33:49,512] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:34:07,645] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:34:07,647] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:34:25,806] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:34:25,807] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:34:43,933] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:34:43,934] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 11:35:02,060] [WARNING] tcp_handler: Read failure attempting reconnection. TimeoutError: [Errno 60] Operation timed out
+[2025-10-26 11:35:02,062] [INFO] tcp_handler: Client connected to 0.0.0.0:50000

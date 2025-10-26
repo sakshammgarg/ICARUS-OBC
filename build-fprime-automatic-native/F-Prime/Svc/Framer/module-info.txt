@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Framer/Framer.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Framer/FramerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Framer/FramerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Framer/FramerComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Framer/Framer.fpp
+Svc/FramingProtocol

@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Buffer/Buffer.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferGetPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferSendPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferGetPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferGetPortAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferSendPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Buffer/BufferSendPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Buffer/Buffer.fpp
+Fw/Types

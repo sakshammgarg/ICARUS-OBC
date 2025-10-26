@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/ADCS/ADCS.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/ADCS/ADCSComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/ADCS/ADCSComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/ADCS/ADCSComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/ADCS/ADCS.fpp
+

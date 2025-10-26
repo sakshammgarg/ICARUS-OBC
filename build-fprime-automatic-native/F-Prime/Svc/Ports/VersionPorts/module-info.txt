@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionStatusEnumAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionPortAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionStatusEnumAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ports/VersionPorts/VersionStatusEnumAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Ports/VersionPorts/VersionPorts.fpp
+

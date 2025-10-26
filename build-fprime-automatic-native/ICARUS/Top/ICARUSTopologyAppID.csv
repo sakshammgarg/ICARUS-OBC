@@ -1,0 +1,11 @@
+component,instance,base_id,base_window_range
+Comms,comms,256,1
+Microcontroller,mcu,512,2
+NandFlash,flash,768,1
+ADCS,adcs,1024,1
+CommandDispatcher,cmdDisp,1280,11
+ActiveLogger,eventLogger,1536,5
+PosixTime,timeComp,1792,0
+TlmChan,tlmSend,2048,0
+PassiveTextLogger,textLogger,2304,0
+TcpClient,comDriver,2560,0

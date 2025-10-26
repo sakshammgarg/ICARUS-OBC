@@ -1,0 +1,10 @@
+[2025-10-25 22:36:28,091] [INFO] root: Logging system initialized!
+[2025-10-25 22:36:28,092] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-25 22:36:28,093] [INFO] udp_handler: Client connected to 127.0.0.1:50000
+[2025-10-25 22:36:28,093] [INFO] tcp_handler: Client connected to 127.0.0.1:50000
+[2025-10-25 22:36:28,094] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-25 22:36:28,599] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out
+[2025-10-25 22:39:32,913] [WARNING] tcp_handler: Read failure attempting reconnection. OSError: [Errno 9] Bad file descriptor
+[2025-10-25 22:39:32,914] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:39:33,915] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:39:34,915] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused

@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/SystemResources/SystemResources.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourcesComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourcesComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/SystemResources/SystemResourcesComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/SystemResources/SystemResources.fpp
+Os

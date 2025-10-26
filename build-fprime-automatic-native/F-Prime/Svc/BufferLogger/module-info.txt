@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/BufferLogger.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/BufferLoggerFile.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLoggerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLogger_LogStateEnumAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLoggerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLoggerComponentAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLogger_LogStateEnumAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/BufferLogger/BufferLogger_LogStateEnumAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/BufferLogger.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/Commands.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/Events.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/BufferLogger/Telemetry.fppi
+

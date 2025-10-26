@@ -1,0 +1,6 @@
+AltitudeCmdDataSerializableAc.cpp
+AltitudeCmdDataSerializableAc.hpp
+AltitudeCmdDataSerializableAi.xml
+AltitudeCmdPortAc.cpp
+AltitudeCmdPortAc.hpp
+AltitudeCmdPortAi.xml

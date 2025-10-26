@@ -1,0 +1,2 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Buffer/Buffer.fpp

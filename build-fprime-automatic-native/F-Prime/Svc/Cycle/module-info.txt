@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Cycle/CyclePortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Cycle/CyclePortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Cycle/CyclePortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Cycle/Cycle.fpp
+Os;Fw/Port

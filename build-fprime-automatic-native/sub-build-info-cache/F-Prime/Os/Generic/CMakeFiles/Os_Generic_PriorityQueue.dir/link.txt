@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libOs_Generic_PriorityQueue.a CMakeFiles/Os_Generic_PriorityQueue.dir/__/__/cmake/empty.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libOs_Generic_PriorityQueue.a

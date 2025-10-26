@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libOs_Task_Stub.a CMakeFiles/Os_Task_Stub.dir/Task.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libOs_Task_Stub.a

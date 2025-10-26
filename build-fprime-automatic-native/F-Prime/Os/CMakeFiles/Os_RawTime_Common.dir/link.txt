@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/Darwin/libOs_RawTime_Common.a CMakeFiles/Os_RawTime_Common.dir/RawTime.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/Darwin/libOs_RawTime_Common.a

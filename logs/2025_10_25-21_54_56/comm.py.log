@@ -1,0 +1,6 @@
+[2025-10-25 21:54:56,762] [INFO] root: Logging system initialized!
+[2025-10-25 21:54:56,763] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-25 21:54:56,763] [INFO] udp_handler: Server connected to 0.0.0.0:50000
+[2025-10-25 21:54:56,764] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-25 21:54:57,269] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out
+[2025-10-25 21:55:10,674] [WARNING] uplink: Uplink failed to send 24 bytes of data after 3 retries

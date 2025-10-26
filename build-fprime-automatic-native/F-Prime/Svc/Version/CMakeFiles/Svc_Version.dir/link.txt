@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libSvc_Version.a CMakeFiles/Svc_Version.dir/Version.cpp.o CMakeFiles/Svc_Version.dir/CustomVersionDbSerializableAc.cpp.o CMakeFiles/Svc_Version.dir/VersionComponentAc.cpp.o CMakeFiles/Svc_Version.dir/VersionEnabledEnumAc.cpp.o CMakeFiles/Svc_Version.dir/VersionTypeEnumAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libSvc_Version.a

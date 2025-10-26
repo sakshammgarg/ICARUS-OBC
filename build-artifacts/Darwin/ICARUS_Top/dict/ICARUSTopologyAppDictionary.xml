@@ -1,0 +1,222 @@
+<dictionary topology="ICARUS" framework_version="3.5.0" project_version="3.5.0">
+  <enums>
+    <enum type="Fw::DeserialStatus" serialize_type="I32">
+      <item name="OK" value="0" description=""/>
+      <item name="BUFFER_EMPTY" value="3" description="Deserialization buffer was empty when trying to read data"/>
+      <item name="FORMAT_ERROR" value="4" description="Deserialization data had incorrect values (unexpected data types)"/>
+      <item name="SIZE_MISMATCH" value="5" description="Data was left in in the buffer, but not enough to deserialize"/>
+      <item name="TYPE_MISMATCH" value="6" description="Deserialized type ID didn't match"/>
+    </enum>
+    <enum type="Svc::ActiveLogger_Enabled" serialize_type="I32">
+      <item name="ENABLED" value="0" description="Enabled state"/>
+      <item name="DISABLED" value="1" description="Disabled state"/>
+    </enum>
+    <enum type="Svc::ActiveLogger_FilterSeverity" serialize_type="I32">
+      <item name="WARNING_HI" value="0" description="Filter WARNING_HI events"/>
+      <item name="WARNING_LO" value="1" description="Filter WARNING_LO events"/>
+      <item name="COMMAND" value="2" description="Filter COMMAND events"/>
+      <item name="ACTIVITY_HI" value="3" description="Filter ACTIVITY_HI events"/>
+      <item name="ACTIVITY_LO" value="4" description="Filter ACTIVITY_LO events"/>
+      <item name="DIAGNOSTIC" value="5" description="Filter DIAGNOSTIC events"/>
+    </enum>
+    <enum type="Fw::CmdResponse" serialize_type="I32">
+      <item name="OK" value="0" description="Command successfully executed"/>
+      <item name="INVALID_OPCODE" value="1" description="Invalid opcode dispatched"/>
+      <item name="VALIDATION_ERROR" value="2" description="Command failed validation"/>
+      <item name="FORMAT_ERROR" value="3" description="Command failed to deserialize"/>
+      <item name="EXECUTION_ERROR" value="4" description="Command had execution error"/>
+      <item name="BUSY" value="5" description="Component busy"/>
+    </enum>
+    <enum type="Fw::LogSeverity" serialize_type="I32">
+      <item name="FATAL" value="1" description="A fatal non-recoverable event"/>
+      <item name="WARNING_HI" value="2" description="A serious but recoverable event"/>
+      <item name="WARNING_LO" value="3" description="A less serious but recoverable event"/>
+      <item name="COMMAND" value="4" description="An activity related to commanding"/>
+      <item name="ACTIVITY_HI" value="5" description="Important informational events"/>
+      <item name="ACTIVITY_LO" value="6" description="Less important informational events"/>
+      <item name="DIAGNOSTIC" value="7" description="Software diagnostic events"/>
+    </enum>
+    <enum type="Drv::RecvStatus" serialize_type="I32">
+      <item name="RECV_OK" value="0" description="Receive worked as expected"/>
+      <item name="RECV_NO_DATA" value="1" description="Receive worked, but there was no data"/>
+      <item name="RECV_ERROR" value="2" description="Receive error occurred retrying may succeed"/>
+    </enum>
+    <enum type="Drv::SendStatus" serialize_type="I32">
+      <item name="SEND_OK" value="0" description="Send worked as expected"/>
+      <item name="SEND_RETRY" value="1" description="Data send should be retried"/>
+      <item name="SEND_ERROR" value="2" description="Send error occurred retrying may succeed"/>
+    </enum>
+  </enums>
+  <serializables>
+    <serializable type="ICARUS::AltitudeCmdData">
+      <members>
+        <member name="timestamp" format_specifier="%u" description="Unix timestamp of command generation" default="0" type="U32"/>
+        <member name="altitude" format_specifier="%g" description="Target altitude in meters" default="0.0f" type="F32"/>
+      </members>
+    </serializable>
+  </serializables>
+  <arrays/>
+  <commands>
+    <command component="comms" mnemonic="SimulateReceive" opcode="0x100" description="Command to simulate receiving data">
+      <args>
+        <arg name="altitude" type="F32"/>
+      </args>
+    </command>
+    <command component="cmdDisp" mnemonic="CMD_NO_OP" opcode="0x500" description="No-op command">
+      <args/>
+    </command>
+    <command component="cmdDisp" mnemonic="CMD_NO_OP_STRING" opcode="0x501" description="No-op string command">
+      <args>
+        <arg name="arg1" description="&#10;          The String command argument&#10;          " len="40" type="string"/>
+      </args>
+    </command>
+    <command component="cmdDisp" mnemonic="CMD_TEST_CMD_1" opcode="0x502" description="No-op command">
+      <args>
+        <arg name="arg1" description="&#10;          The I32 command argument&#10;          " type="I32"/>
+        <arg name="arg2" description="&#10;          The F32 command argument&#10;          " type="F32"/>
+        <arg name="arg3" description="&#10;          The U8 command argument&#10;          " type="U8"/>
+      </args>
+    </command>
+    <command component="cmdDisp" mnemonic="CMD_CLEAR_TRACKING" opcode="0x503" description="Clear command tracking info to recover from components not returning status">
+      <args/>
+    </command>
+    <command component="eventLogger" mnemonic="SET_EVENT_FILTER" opcode="0x600" description="Set filter for reporting events. Events are not stored in component.">
+      <args>
+        <arg name="filterLevel" description="&#10;          Filter level&#10;          " type="Svc::ActiveLogger_FilterSeverity"/>
+        <arg name="filterEnabled" description="&#10;          Filter state&#10;          " type="Svc::ActiveLogger_Enabled"/>
+      </args>
+    </command>
+    <command component="eventLogger" mnemonic="SET_ID_FILTER" opcode="0x602" description="Filter a particular ID">
+      <args>
+        <arg name="ID" type="U32"/>
+        <arg name="idFilterEnabled" description="&#10;          ID filter state&#10;          " type="Svc::ActiveLogger_Enabled"/>
+      </args>
+    </command>
+    <command component="eventLogger" mnemonic="DUMP_FILTER_STATE" opcode="0x603" description="Dump the filter states via events">
+      <args/>
+    </command>
+  </commands>
+  <events>
+    <event component="comms" name="CommandSent" id="0x100" severity="ACTIVITY_HI" description="Event for command sent" format_string="Command sent at time=%u, altitude=%fm">
+      <args>
+        <arg name="timestamp" description="Command timestamp" type="U32"/>
+        <arg name="altitude" description="Target altitude" type="F32"/>
+      </args>
+    </event>
+    <event component="mcu" name="CommandRouted" id="0x200" severity="ACTIVITY_LO" description="Event for valid command routed" format_string="Command routed at time=%u">
+      <args>
+        <arg name="timestamp" description="Command timestamp" type="U32"/>
+      </args>
+    </event>
+    <event component="mcu" name="InvalidAltitude" id="0x201" severity="WARNING_HI" description="Event for invalid altitude" format_string="Invalid altitude received: %f">
+      <args>
+        <arg name="altitude" description="Invalid altitude value" type="F32"/>
+      </args>
+    </event>
+    <event component="flash" name="CommandStored" id="0x300" severity="ACTIVITY_LO" description="Event for command stored" format_string="Command stored at time=%u, buffer size=%u">
+      <args>
+        <arg name="timestamp" description="Command timestamp" type="U32"/>
+        <arg name="bufferSize" description="Current buffer size" type="U32"/>
+      </args>
+    </event>
+    <event component="adcs" name="AltitudeCommandReceived" id="0x400" severity="ACTIVITY_HI" description="Event for altitude command received" format_string="Altitude command received at time=%u: %fm">
+      <args>
+        <arg name="timestamp" description="Command timestamp" type="U32"/>
+        <arg name="altitude" description="Target altitude" type="F32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="OpCodeRegistered" id="0x500" severity="DIAGNOSTIC" format_string="Opcode 0x%x registered to port %d slot %d">
+      <args>
+        <arg name="Opcode" description="The opcode to register" type="U32"/>
+        <arg name="port" description="The registration port" type="I32"/>
+        <arg name="slot" description="The dispatch slot it was placed in" type="I32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="OpCodeDispatched" id="0x501" severity="COMMAND" description="Op code dispatched event" format_string="Opcode 0x%x dispatched to port %d">
+      <args>
+        <arg name="Opcode" description="The opcode dispatched" type="U32"/>
+        <arg name="port" description="The port dispatched to" type="I32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="OpCodeCompleted" id="0x502" severity="COMMAND" description="Op code completed event" format_string="Opcode 0x%x completed">
+      <args>
+        <arg name="Opcode" description="The I32 command argument" type="U32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="OpCodeError" id="0x503" severity="COMMAND" description="Op code completed with error event" format_string="Opcode 0x%x completed with error %s">
+      <args>
+        <arg name="Opcode" description="The opcode with the error" type="U32"/>
+        <arg name="error" description="The error value" type="Fw::CmdResponse"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="MalformedCommand" id="0x504" severity="WARNING_HI" description="Received a malformed command packet" format_string="Received malformed command packet. Status: %s">
+      <args>
+        <arg name="Status" description="The deserialization error" type="Fw::DeserialStatus"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="InvalidCommand" id="0x505" severity="WARNING_HI" description="Received an invalid opcode" format_string="Invalid opcode 0x%x received">
+      <args>
+        <arg name="Opcode" description="Invalid opcode" type="U32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="TooManyCommands" id="0x506" severity="WARNING_HI" description="Exceeded the number of commands that can be simultaneously executed" format_string="Too many outstanding commands. opcode=0x%x">
+      <args>
+        <arg name="Opcode" description="The opcode that overflowed the list" type="U32"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="NoOpReceived" id="0x507" severity="ACTIVITY_HI" description="The command dispatcher has successfully received a NO-OP command" format_string="Received a NO-OP command">
+      <args/>
+    </event>
+    <event component="cmdDisp" name="NoOpStringReceived" id="0x508" severity="ACTIVITY_HI" description="The command dispatcher has successfully received a NO-OP command from GUI with a string" format_string="Received a NO-OP string=%s">
+      <args>
+        <arg name="message" description="The NO-OP string that is generated" len="40" type="string"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="TestCmd1Args" id="0x509" severity="ACTIVITY_HI" description="This log event message returns the TEST_CMD_1 arguments." format_string="TEST_CMD_1 args: I32: %d, F32: %f, U8: %u">
+      <args>
+        <arg name="arg1" description="Arg1" type="I32"/>
+        <arg name="arg2" description="Arg2" type="F32"/>
+        <arg name="arg3" description="Arg3" type="U8"/>
+      </args>
+    </event>
+    <event component="cmdDisp" name="OpCodeReregistered" id="0x50a" severity="DIAGNOSTIC" description="Op code reregistered event" format_string="Opcode 0x%x is already registered to port %d">
+      <args>
+        <arg name="Opcode" description="The opcode reregistered" type="U32"/>
+        <arg name="port" description="The reregistration port" type="I32"/>
+      </args>
+    </event>
+    <event component="eventLogger" name="SEVERITY_FILTER_STATE" id="0x600" severity="ACTIVITY_LO" description="Dump severity filter state" format_string="%s filter state. %d">
+      <args>
+        <arg name="severity" description="The severity level" type="Svc::ActiveLogger_FilterSeverity"/>
+        <arg name="enabled" type="bool"/>
+      </args>
+    </event>
+    <event component="eventLogger" name="ID_FILTER_ENABLED" id="0x601" severity="ACTIVITY_HI" description="Indicate ID is filtered" format_string="ID %u is filtered.">
+      <args>
+        <arg name="ID" description="The ID filtered" type="U32"/>
+      </args>
+    </event>
+    <event component="eventLogger" name="ID_FILTER_LIST_FULL" id="0x602" severity="WARNING_LO" description="Attempted to add ID to full ID filter ID" format_string="ID filter list is full. Cannot filter %u .">
+      <args>
+        <arg name="ID" description="The ID filtered" type="U32"/>
+      </args>
+    </event>
+    <event component="eventLogger" name="ID_FILTER_REMOVED" id="0x603" severity="ACTIVITY_HI" description="Removed an ID from the filter" format_string="ID filter ID %u removed.">
+      <args>
+        <arg name="ID" description="The ID removed" type="U32"/>
+      </args>
+    </event>
+    <event component="eventLogger" name="ID_FILTER_NOT_FOUND" id="0x604" severity="WARNING_LO" description="ID not in filter" format_string="ID filter ID %u not found.">
+      <args>
+        <arg name="ID" description="The ID removed" type="U32"/>
+      </args>
+    </event>
+  </events>
+  <channels>
+    <channel component="flash" name="BufferSize" id="0x300" description="Telemetry channel for buffer size" type="U32"/>
+    <channel component="adcs" name="LastAltitudeCmd" id="0x400" description="Telemetry channel for last altitude command" type="F32"/>
+    <channel component="cmdDisp" name="CommandsDispatched" id="0x500" description="Number of commands dispatched" type="U32"/>
+    <channel component="cmdDisp" name="CommandErrors" id="0x501" description="Number of command errors" type="U32"/>
+  </channels>
+  <parameters/>
+</dictionary>

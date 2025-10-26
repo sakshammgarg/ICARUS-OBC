@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqCancelPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqInPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqCancelPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqInPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Seq/CmdSeqInPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Seq/Seq.fpp
+Fw/Port

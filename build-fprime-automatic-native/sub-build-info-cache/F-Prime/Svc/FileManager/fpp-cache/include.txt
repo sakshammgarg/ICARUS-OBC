@@ -1,0 +1,3 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Commands.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Events.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Telemetry.fppi

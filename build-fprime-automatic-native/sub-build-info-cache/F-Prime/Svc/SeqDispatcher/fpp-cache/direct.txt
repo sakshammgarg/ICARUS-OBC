@@ -1,0 +1,10 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Cmd/Cmd.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Time/Time.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Types/Types.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Seq/Seq.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/SeqDispatcher/SeqDispatcherCommands.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/SeqDispatcher/SeqDispatcherEvents.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/SeqDispatcher/SeqDispatcherTelemetry.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/config/AcConstants.fpp

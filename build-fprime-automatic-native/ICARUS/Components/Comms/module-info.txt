@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/Comms/Comms.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/Comms/CommsComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/Comms/CommsComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/Comms/CommsComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/Comms/Comms.fpp
+

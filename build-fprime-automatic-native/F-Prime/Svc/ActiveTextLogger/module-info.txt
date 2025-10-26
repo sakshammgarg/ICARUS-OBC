@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveTextLogger/ActiveTextLogger.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveTextLogger/LogFile.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveTextLogger/ActiveTextLoggerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveTextLogger/ActiveTextLoggerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveTextLogger/ActiveTextLoggerComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveTextLogger/ActiveTextLogger.fpp
+

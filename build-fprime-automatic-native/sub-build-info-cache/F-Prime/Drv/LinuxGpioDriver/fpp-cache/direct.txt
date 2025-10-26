@@ -1,0 +1,5 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/Interfaces/GpioInterface.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Os/Models/File.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Cycle/Cycle.fpp

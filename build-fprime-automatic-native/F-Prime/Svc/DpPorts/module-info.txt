@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpPorts/DpWrittenPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpPorts/DpWrittenPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/DpPorts/DpWrittenPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/DpPorts/DpPorts.fpp
+Fw/Types;Fw/Port

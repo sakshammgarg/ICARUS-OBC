@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Com/ComPacket.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Com/ComBuffer.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Com/ComPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Com/ComPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Com/ComPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Com/Com.fpp
+

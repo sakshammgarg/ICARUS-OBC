@@ -1,0 +1,9 @@
+[2025-10-26 17:41:00,548] [INFO] root: Logging system initialized!
+[2025-10-26 17:41:00,549] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-26 17:41:00,550] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-26 17:41:00,551] [INFO] udp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 17:41:00,551] [INFO] tcp_handler: Client connected to 0.0.0.0:50000
+[2025-10-26 17:41:01,055] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out
+[2025-10-26 17:49:26,229] [WARNING] tcp_handler: Read failure attempting reconnection. ConnectionResetError: [Errno 54] Connection reset by peer
+[2025-10-26 17:49:26,231] [WARNING] tcp_handler: Failed to open socket at 0.0.0.0:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-26 17:49:27,231] [WARNING] tcp_handler: Failed to open socket at 0.0.0.0:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused

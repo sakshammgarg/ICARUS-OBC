@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/Darwin/libOs_File_Common.a CMakeFiles/Os_File_Common.dir/File.cpp.o CMakeFiles/Os_File_Common.dir/FileSystem.cpp.o CMakeFiles/Os_File_Common.dir/Directory.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/Darwin/libOs_File_Common.a

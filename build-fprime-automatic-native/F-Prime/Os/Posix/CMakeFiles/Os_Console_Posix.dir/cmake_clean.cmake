@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "../../../lib/Darwin/libOs_Console_Posix.a"
+  "../../../lib/Darwin/libOs_Console_Posix.pdb"
+  "CMakeFiles/Os_Console_Posix.dir/Console.cpp.o"
+  "CMakeFiles/Os_Console_Posix.dir/Console.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Os_Console_Posix.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

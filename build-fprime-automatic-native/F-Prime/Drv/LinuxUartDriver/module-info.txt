@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/LinuxUartDriver.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxUartDriver/LinuxUartDriverComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxUartDriver/LinuxUartDriverComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxUartDriver/LinuxUartDriverComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/LinuxUartDriver.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/Interfaces/ByteStreamDriverInterface.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/Events.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/Telemetry.fppi
+Os

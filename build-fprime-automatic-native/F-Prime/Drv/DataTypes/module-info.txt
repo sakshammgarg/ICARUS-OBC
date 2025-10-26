@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/DataTypes/DataBuffer.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/DataTypes/DataBufferPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/DataTypes/DataBufferPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/DataTypes/DataTypes.fpp
+Fw/Port

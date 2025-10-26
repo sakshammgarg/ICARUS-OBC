@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/TlmBuffer.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/TlmPacket.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmGetPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmGetPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmGetPortAc.hpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Fw/Tlm/TlmPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp
+Fw/Com

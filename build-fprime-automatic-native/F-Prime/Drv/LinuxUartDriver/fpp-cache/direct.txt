@@ -1,0 +1,6 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/Interfaces/ByteStreamDriverInterface.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/Events.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxUartDriver/Telemetry.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp

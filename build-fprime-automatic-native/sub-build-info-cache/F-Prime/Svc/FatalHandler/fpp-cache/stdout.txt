@@ -1,0 +1,2 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Fatal/Fatal.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/config/FpConfig.fpp

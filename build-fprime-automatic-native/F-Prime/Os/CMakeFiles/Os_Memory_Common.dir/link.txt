@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/Darwin/libOs_Memory_Common.a CMakeFiles/Os_Memory_Common.dir/Memory.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/Darwin/libOs_Memory_Common.a

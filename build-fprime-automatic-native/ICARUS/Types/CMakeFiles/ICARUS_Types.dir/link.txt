@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/Darwin/libICARUS_Types.a CMakeFiles/ICARUS_Types.dir/AltitudeCmdDataSerializableAc.cpp.o CMakeFiles/ICARUS_Types.dir/AltitudeCmdPortAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/Darwin/libICARUS_Types.a

@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Obj/ObjBase.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Obj/SimpleObjRegistry.cpp
+
+
+Fw/Cfg;Fw/Types;Fw/Logger

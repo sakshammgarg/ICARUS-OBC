@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libFw_Dp.a CMakeFiles/Fw_Dp.dir/DpContainer.cpp.o CMakeFiles/Fw_Dp.dir/DpGetPortAc.cpp.o CMakeFiles/Fw_Dp.dir/DpRequestPortAc.cpp.o CMakeFiles/Fw_Dp.dir/DpResponsePortAc.cpp.o CMakeFiles/Fw_Dp.dir/DpSendPortAc.cpp.o CMakeFiles/Fw_Dp.dir/DpStateEnumAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libFw_Dp.a

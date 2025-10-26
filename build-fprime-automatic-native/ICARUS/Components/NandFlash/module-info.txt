@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/NandFlash/NandFlash.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/NandFlash/NandFlashComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/NandFlash/NandFlashComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/NandFlash/NandFlashComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/NandFlash/NandFlash.fpp
+

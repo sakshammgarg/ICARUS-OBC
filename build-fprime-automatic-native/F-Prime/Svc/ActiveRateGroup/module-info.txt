@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveRateGroup/ActiveRateGroup.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveRateGroup/ActiveRateGroup.fpp
+

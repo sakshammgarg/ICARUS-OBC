@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/SerializableFile/SerializableFile.cpp
+
+
+Fw/Cfg;Fw/Types;Os

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libOs_Posix_Shared.a CMakeFiles/Os_Posix_Shared.dir/__/__/cmake/empty.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libOs_Posix_Shared.a

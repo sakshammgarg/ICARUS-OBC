@@ -1,0 +1,10 @@
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/ADCS/ADCS.fpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/Comms/Comms.fpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/Microcontroller/Microcontroller.fpp
+/Users/sakshamgarg/ICARUS-OBC/ICARUS/Components/NandFlash/NandFlash.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/TcpClient/TcpClient.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ActiveLogger/ActiveLogger.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/CmdDispatcher/CmdDispatcher.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/PassiveConsoleTextLogger/PassiveConsoleTextLogger.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/PosixTime/PosixTime.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/TlmChan/TlmChan.fpp

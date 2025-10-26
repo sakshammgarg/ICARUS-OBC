@@ -1,0 +1,20 @@
+     INSTANCE NAME      | BASE ID (HEX) | REQUESTED WINDOW SIZE | DIFFERENCED ID WINDOW SIZE | LARGEST COMPONENT INTERNAL ID | MAX AMOUNT OF IDS
+         comms          |  256 (0x100)  |           1           |            256             |               1               |         1        
+          mcu           |  512 (0x200)  |           2           |            256             |               2               |         2        
+         flash          |  768 (0x300)  |           1           |            256             |               1               |         1        
+         adcs           | 1024 (0x400)  |           1           |            256             |               1               |         1        
+        cmdDisp         | 1280 (0x500)  |          11           |            256             |              11               |        11        
+      eventLogger       | 1536 (0x600)  |           5           |            256             |               5               |         5        
+       timeComp         | 1792 (0x700)  |           0           |            256             |             None              |         0        
+        tlmSend         | 2048 (0x800)  |           0           |            256             |             None              |         0        
+      textLogger        | 2304 (0x900)  |           0           |            256             |             None              |         0        
+       comDriver        | 2560 (0xa00)  |           0           |            inf.            |             None              |         0        
+-------------------------------------------------------------------------------------------------------------------------------------
+| INSTANCE NAME                 - Name of the instance object.                                                                      |
+| BASE ID (HEX)                 - Base ID set for the instance.                                                                     |
+| REQUESTED WINDOW SIZE         - Specified by either the 'base_id_range' attribute in the instance tag or by finding the max of th |
+|                                 e 'base_id_range' attribute in the topology tag and the largest internal ID of the instance.      |
+| DIFFERENCED ID WINDOW SIZE    - Calculated by subtracting the current base ID from the next base ID.                              |
+| LARGEST COMPONENT INTERNAL ID - The largest ID found in the events, channels, and commands of the instance.                       |
+| MAX AMOUNT OF IDS             - The largest amount of items from either events, channels, or commands.                            |
+-------------------------------------------------------------------------------------------------------------------------------------

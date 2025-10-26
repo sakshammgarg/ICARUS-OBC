@@ -1,0 +1,2 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/Commands.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/Events.fppi

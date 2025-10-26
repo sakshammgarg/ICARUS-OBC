@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libSvc_DpManager.a CMakeFiles/Svc_DpManager.dir/DpManager.cpp.o CMakeFiles/Svc_DpManager.dir/DpManagerComponentAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libSvc_DpManager.a

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libOs_Cpu_Darwin.a CMakeFiles/Os_Cpu_Darwin.dir/Cpu.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libOs_Cpu_Darwin.a

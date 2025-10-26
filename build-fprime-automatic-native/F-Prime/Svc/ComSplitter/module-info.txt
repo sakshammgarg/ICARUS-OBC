@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComSplitter/ComSplitter.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComSplitter/ComSplitterComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComSplitter/ComSplitterComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComSplitter/ComSplitterComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComSplitter/ComSplitter.fpp
+

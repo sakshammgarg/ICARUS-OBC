@@ -1,0 +1,7 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Buffer/Buffer.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Time/Time.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/Events.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/Telemetry.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Ping/Ping.fpp

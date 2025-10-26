@@ -1,0 +1,6 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/Interfaces/SpiInterface.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/Events.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/Telemetry.fppi
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp

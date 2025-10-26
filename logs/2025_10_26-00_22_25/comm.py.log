@@ -1,0 +1,5 @@
+[2025-10-26 00:22:25,850] [INFO] root: Logging system initialized!
+[2025-10-26 00:22:25,850] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-26 00:22:25,850] [INFO] udp_handler: Server connected to 0.0.0.0:50000
+[2025-10-26 00:22:25,850] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-26 00:22:26,355] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out

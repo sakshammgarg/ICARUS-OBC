@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/FileManager.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileManager/FileManagerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileManager/FileManagerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileManager/FileManagerComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/FileManager.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Commands.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Events.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileManager/Telemetry.fppi
+Os;Fw/FilePacket;Utils/Hash;CFDP/Checksum

@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Comp/QueuedComponentBase.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Comp/ActiveComponentBase.cpp
+
+
+Fw/Cfg;Fw/Types;Fw/Obj;Fw/Port;Os;Fw/Comp

@@ -1,0 +1,4 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Cmd/Cmd.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Com/Com.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Sched/Sched.fpp

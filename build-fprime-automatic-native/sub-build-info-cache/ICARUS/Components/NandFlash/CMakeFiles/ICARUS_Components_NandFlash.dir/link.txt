@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libICARUS_Components_NandFlash.a CMakeFiles/ICARUS_Components_NandFlash.dir/__/__/__/lib/fprime/cmake/empty.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libICARUS_Components_NandFlash.a

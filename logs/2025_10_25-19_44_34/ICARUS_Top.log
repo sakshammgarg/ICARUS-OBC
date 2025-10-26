@@ -1,0 +1,3 @@
+Assert: "/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/ICARUS/Components/ADCS/ADCSComponentAc.cpp:476"
+Assertion failed: (0), function defaultSwAssert, file Assert.cpp, line 119.
+ICARUS-OBC Starting...

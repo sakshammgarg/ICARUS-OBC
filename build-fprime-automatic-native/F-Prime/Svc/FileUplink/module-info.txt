@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/FileUplink.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/File.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/Warnings.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileUplink/FileUplinkComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileUplink/FileUplinkComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FileUplink/FileUplinkComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/FileUplink.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/Events.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FileUplink/Telemetry.fppi
+Os;Fw/Buffer;Fw/FilePacket;Utils/Hash;CFDP/Checksum

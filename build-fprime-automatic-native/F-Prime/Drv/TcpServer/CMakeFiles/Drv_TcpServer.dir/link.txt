@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libDrv_TcpServer.a CMakeFiles/Drv_TcpServer.dir/TcpServerComponentImpl.cpp.o CMakeFiles/Drv_TcpServer.dir/TcpServerComponentAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libDrv_TcpServer.a

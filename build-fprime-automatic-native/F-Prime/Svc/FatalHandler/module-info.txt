@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FatalHandler/FatalHandlerComponentCommonImpl.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FatalHandler/FatalHandlerComponentLinuxImpl.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/FatalHandler/FatalHandler.fpp
+Os;Fw/Logger

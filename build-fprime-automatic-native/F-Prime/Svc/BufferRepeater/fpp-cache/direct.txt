@@ -1,0 +1,3 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Buffer/Buffer.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/config/AcConstants.fpp

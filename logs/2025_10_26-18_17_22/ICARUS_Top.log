@@ -1,0 +1,6 @@
+========================================
+   ICARUS OBC Flight Software
+========================================
+Listening on 0.0.0.0:50000
+Setting up topology...
+ERROR: Failed to configure TcpServer on 0.0.0.0:50000

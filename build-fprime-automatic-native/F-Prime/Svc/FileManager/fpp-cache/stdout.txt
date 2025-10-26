@@ -1,0 +1,6 @@
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Cmd/Cmd.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Log/Log.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Time/Time.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Fw/Tlm/Tlm.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Ping/Ping.fpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/config/FpConfig.fpp

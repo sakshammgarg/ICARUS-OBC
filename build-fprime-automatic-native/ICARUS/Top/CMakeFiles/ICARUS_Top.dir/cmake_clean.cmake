@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "../../bin/Darwin/ICARUS_Top"
+  "../../bin/Darwin/ICARUS_Top.pdb"
+  "CMakeFiles/ICARUS_Top.dir/FppConstantsAc.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/FppConstantsAc.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/ICARUSTopologyAc.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/ICARUSTopologyAc.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/ICARUSTopologyDefs.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/ICARUSTopologyDefs.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/Main.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/Main.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Darwin/DefaultCpu.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Darwin/DefaultCpu.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Darwin/DefaultMemory.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Darwin/DefaultMemory.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Generic/DefaultPriorityQueue.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Generic/DefaultPriorityQueue.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultConsole.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultConsole.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultFile.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultFile.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultMutex.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultMutex.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultRawTime.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultRawTime.cpp.o.d"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultTask.cpp.o"
+  "CMakeFiles/ICARUS_Top.dir/__/__/lib/fprime/Os/Posix/DefaultTask.cpp.o.d"
+  "FppConstantsAc.cpp"
+  "FppConstantsAc.hpp"
+  "ICARUSTopologyAc.cpp"
+  "ICARUSTopologyAc.hpp"
+  "ICARUSTopologyAppAi.xml"
+  "ICARUSTopologyAppDictionary.xml"
+  "ICARUSTopologyDictionary.json"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ICARUS_Top.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

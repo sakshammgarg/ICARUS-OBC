@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../../lib/Darwin/libSvc_CmdSplitter.a CMakeFiles/Svc_CmdSplitter.dir/CmdSplitter.cpp.o CMakeFiles/Svc_CmdSplitter.dir/CmdSplitterComponentAc.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../../lib/Darwin/libSvc_CmdSplitter.a

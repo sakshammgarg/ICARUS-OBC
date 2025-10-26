@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/ComLogger.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComLogger/ComLoggerComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComLogger/ComLoggerComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/ComLogger/ComLoggerComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/ComLogger.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/Commands.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/ComLogger/Events.fppi
+

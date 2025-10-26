@@ -1,0 +1,897 @@
+{
+  "metadata" : {
+    "deploymentName" : "ICARUS",
+    "projectVersion" : "v3.5.0",
+    "frameworkVersion" : "v3.5.0",
+    "libraryVersions" : [
+      "lib@v3.5.0"
+    ],
+    "dictionarySpecVersion" : "1.0.0"
+  },
+  "typeDefinitions" : [
+    {
+      "kind" : "enum",
+      "qualifiedName" : "Svc.ActiveLogger.FilterSeverity",
+      "representationType" : {
+        "name" : "I32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : true
+      },
+      "enumeratedConstants" : [
+        {
+          "name" : "WARNING_HI",
+          "value" : 0,
+          "annotation" : "Filter WARNING_HI events"
+        },
+        {
+          "name" : "WARNING_LO",
+          "value" : 1,
+          "annotation" : "Filter WARNING_LO events"
+        },
+        {
+          "name" : "COMMAND",
+          "value" : 2,
+          "annotation" : "Filter COMMAND events"
+        },
+        {
+          "name" : "ACTIVITY_HI",
+          "value" : 3,
+          "annotation" : "Filter ACTIVITY_HI events"
+        },
+        {
+          "name" : "ACTIVITY_LO",
+          "value" : 4,
+          "annotation" : "Filter ACTIVITY_LO events"
+        },
+        {
+          "name" : "DIAGNOSTIC",
+          "value" : 5,
+          "annotation" : "Filter DIAGNOSTIC events"
+        }
+      ],
+      "default" : "Svc.ActiveLogger.FilterSeverity.WARNING_HI",
+      "annotation" : "Severity level for event filtering\nSimilar to Fw::LogSeverity, but no FATAL event"
+    },
+    {
+      "kind" : "enum",
+      "qualifiedName" : "Svc.ActiveLogger.Enabled",
+      "representationType" : {
+        "name" : "I32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : true
+      },
+      "enumeratedConstants" : [
+        {
+          "name" : "ENABLED",
+          "value" : 0,
+          "annotation" : "Enabled state"
+        },
+        {
+          "name" : "DISABLED",
+          "value" : 1,
+          "annotation" : "Disabled state"
+        }
+      ],
+      "default" : "Svc.ActiveLogger.Enabled.ENABLED",
+      "annotation" : "Enabled and disabled state"
+    },
+    {
+      "kind" : "enum",
+      "qualifiedName" : "Fw.CmdResponse",
+      "representationType" : {
+        "name" : "I32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : true
+      },
+      "enumeratedConstants" : [
+        {
+          "name" : "OK",
+          "value" : 0,
+          "annotation" : "Command successfully executed"
+        },
+        {
+          "name" : "INVALID_OPCODE",
+          "value" : 1,
+          "annotation" : "Invalid opcode dispatched"
+        },
+        {
+          "name" : "VALIDATION_ERROR",
+          "value" : 2,
+          "annotation" : "Command failed validation"
+        },
+        {
+          "name" : "FORMAT_ERROR",
+          "value" : 3,
+          "annotation" : "Command failed to deserialize"
+        },
+        {
+          "name" : "EXECUTION_ERROR",
+          "value" : 4,
+          "annotation" : "Command had execution error"
+        },
+        {
+          "name" : "BUSY",
+          "value" : 5,
+          "annotation" : "Component busy"
+        }
+      ],
+      "default" : "Fw.CmdResponse.OK",
+      "annotation" : "Enum representing a command response"
+    },
+    {
+      "kind" : "enum",
+      "qualifiedName" : "Fw.DeserialStatus",
+      "representationType" : {
+        "name" : "I32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : true
+      },
+      "enumeratedConstants" : [
+        {
+          "name" : "OK",
+          "value" : 0
+        },
+        {
+          "name" : "BUFFER_EMPTY",
+          "value" : 3,
+          "annotation" : "Deserialization buffer was empty when trying to read data"
+        },
+        {
+          "name" : "FORMAT_ERROR",
+          "value" : 4,
+          "annotation" : "Deserialization data had incorrect values (unexpected data types)"
+        },
+        {
+          "name" : "SIZE_MISMATCH",
+          "value" : 5,
+          "annotation" : "Data was left in in the buffer, but not enough to deserialize"
+        },
+        {
+          "name" : "TYPE_MISMATCH",
+          "value" : 6,
+          "annotation" : "Deserialized type ID didn't match"
+        }
+      ],
+      "default" : "Fw.DeserialStatus.OK",
+      "annotation" : "Deserialization status"
+    }
+  ],
+  "commands" : [
+    {
+      "name" : "ICARUS.cmdDisp.CMD_CLEAR_TRACKING",
+      "commandKind" : "async",
+      "opcode" : 1283,
+      "formalParams" : [
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "Clear command tracking info to recover from components not returning status"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.CMD_NO_OP_STRING",
+      "commandKind" : "async",
+      "opcode" : 1281,
+      "formalParams" : [
+        {
+          "name" : "arg1",
+          "type" : {
+            "name" : "string",
+            "kind" : "string",
+            "size" : 40
+          },
+          "ref" : false,
+          "annotation" : "The String command argument"
+        }
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "No-op string command"
+    },
+    {
+      "name" : "ICARUS.comms.SimulateReceive",
+      "commandKind" : "async",
+      "opcode" : 256,
+      "formalParams" : [
+        {
+          "name" : "altitude",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false
+        }
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "Command to simulate receiving data"
+    },
+    {
+      "name" : "ICARUS.eventLogger.DUMP_FILTER_STATE",
+      "commandKind" : "async",
+      "opcode" : 1539,
+      "formalParams" : [
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "Dump the filter states via events"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.CMD_TEST_CMD_1",
+      "commandKind" : "async",
+      "opcode" : 1282,
+      "formalParams" : [
+        {
+          "name" : "arg1",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "The I32 command argument"
+        },
+        {
+          "name" : "arg2",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false,
+          "annotation" : "The F32 command argument"
+        },
+        {
+          "name" : "arg3",
+          "type" : {
+            "name" : "U8",
+            "kind" : "integer",
+            "size" : 8,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The U8 command argument"
+        }
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "No-op command"
+    },
+    {
+      "name" : "ICARUS.eventLogger.SET_ID_FILTER",
+      "commandKind" : "async",
+      "opcode" : 1538,
+      "formalParams" : [
+        {
+          "name" : "ID",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false
+        },
+        {
+          "name" : "idFilterEnabled",
+          "type" : {
+            "name" : "Svc.ActiveLogger.Enabled",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "ID filter state"
+        }
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "Filter a particular ID"
+    },
+    {
+      "name" : "ICARUS.eventLogger.SET_EVENT_FILTER",
+      "commandKind" : "sync",
+      "opcode" : 1536,
+      "formalParams" : [
+        {
+          "name" : "filterLevel",
+          "type" : {
+            "name" : "Svc.ActiveLogger.FilterSeverity",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "Filter level"
+        },
+        {
+          "name" : "filterEnabled",
+          "type" : {
+            "name" : "Svc.ActiveLogger.Enabled",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "Filter state"
+        }
+      ],
+      "annotation" : "Set filter for reporting events. Events are not stored in component."
+    },
+    {
+      "name" : "ICARUS.cmdDisp.CMD_NO_OP",
+      "commandKind" : "async",
+      "opcode" : 1280,
+      "formalParams" : [
+      ],
+      "queueFullBehavior" : "assert",
+      "annotation" : "No-op command"
+    }
+  ],
+  "parameters" : [
+  ],
+  "events" : [
+    {
+      "name" : "ICARUS.adcs.AltitudeCommandReceived",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "timestamp",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Command timestamp"
+        },
+        {
+          "name" : "altitude",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false,
+          "annotation" : "Target altitude"
+        }
+      ],
+      "id" : 1024,
+      "format" : "Altitude command received at time={}: {f}m",
+      "annotation" : "Event for altitude command received"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.OpCodeReregistered",
+      "severity" : "DIAGNOSTIC",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The opcode reregistered"
+        },
+        {
+          "name" : "port",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "The reregistration port"
+        }
+      ],
+      "id" : 1290,
+      "format" : "Opcode 0x{x} is already registered to port {}",
+      "annotation" : "Op code reregistered event"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.NoOpReceived",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+      ],
+      "id" : 1287,
+      "format" : "Received a NO-OP command",
+      "annotation" : "The command dispatcher has successfully received a NO-OP command"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.OpCodeError",
+      "severity" : "COMMAND",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The opcode with the error"
+        },
+        {
+          "name" : "error",
+          "type" : {
+            "name" : "Fw.CmdResponse",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "The error value"
+        }
+      ],
+      "id" : 1283,
+      "format" : "Opcode 0x{x} completed with error {}",
+      "annotation" : "Op code completed with error event"
+    },
+    {
+      "name" : "ICARUS.mcu.CommandRouted",
+      "severity" : "ACTIVITY_LO",
+      "formalParams" : [
+        {
+          "name" : "timestamp",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Command timestamp"
+        }
+      ],
+      "id" : 512,
+      "format" : "Command routed at time={}",
+      "annotation" : "Event for valid command routed"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.OpCodeDispatched",
+      "severity" : "COMMAND",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The opcode dispatched"
+        },
+        {
+          "name" : "port",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "The port dispatched to"
+        }
+      ],
+      "id" : 1281,
+      "format" : "Opcode 0x{x} dispatched to port {}",
+      "annotation" : "Op code dispatched event"
+    },
+    {
+      "name" : "ICARUS.eventLogger.ID_FILTER_NOT_FOUND",
+      "severity" : "WARNING_LO",
+      "formalParams" : [
+        {
+          "name" : "ID",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The ID removed"
+        }
+      ],
+      "id" : 1540,
+      "format" : "ID filter ID {} not found.",
+      "annotation" : "ID not in filter"
+    },
+    {
+      "name" : "ICARUS.comms.CommandSent",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "timestamp",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Command timestamp"
+        },
+        {
+          "name" : "altitude",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false,
+          "annotation" : "Target altitude"
+        }
+      ],
+      "id" : 256,
+      "format" : "Command sent at time={}, altitude={f}m",
+      "annotation" : "Event for command sent"
+    },
+    {
+      "name" : "ICARUS.eventLogger.ID_FILTER_REMOVED",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "ID",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The ID removed"
+        }
+      ],
+      "id" : 1539,
+      "format" : "ID filter ID {} removed.",
+      "annotation" : "Removed an ID from the filter"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.TooManyCommands",
+      "severity" : "WARNING_HI",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The opcode that overflowed the list"
+        }
+      ],
+      "id" : 1286,
+      "format" : "Too many outstanding commands. opcode=0x{x}",
+      "annotation" : "Exceeded the number of commands that can be simultaneously executed"
+    },
+    {
+      "name" : "ICARUS.mcu.InvalidAltitude",
+      "severity" : "WARNING_HI",
+      "formalParams" : [
+        {
+          "name" : "altitude",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false,
+          "annotation" : "Invalid altitude value"
+        }
+      ],
+      "id" : 513,
+      "format" : "Invalid altitude received: {f}",
+      "annotation" : "Event for invalid altitude"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.OpCodeCompleted",
+      "severity" : "COMMAND",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The I32 command argument"
+        }
+      ],
+      "id" : 1282,
+      "format" : "Opcode 0x{x} completed",
+      "annotation" : "Op code completed event"
+    },
+    {
+      "name" : "ICARUS.flash.CommandStored",
+      "severity" : "ACTIVITY_LO",
+      "formalParams" : [
+        {
+          "name" : "timestamp",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Command timestamp"
+        },
+        {
+          "name" : "bufferSize",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Current buffer size"
+        }
+      ],
+      "id" : 768,
+      "format" : "Command stored at time={}, buffer size={}",
+      "annotation" : "Event for command stored"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.TestCmd1Args",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "arg1",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "Arg1"
+        },
+        {
+          "name" : "arg2",
+          "type" : {
+            "name" : "F32",
+            "kind" : "float",
+            "size" : 32
+          },
+          "ref" : false,
+          "annotation" : "Arg2"
+        },
+        {
+          "name" : "arg3",
+          "type" : {
+            "name" : "U8",
+            "kind" : "integer",
+            "size" : 8,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Arg3"
+        }
+      ],
+      "id" : 1289,
+      "format" : "TEST_CMD_1 args: I32: {}, F32: {f}, U8: {}",
+      "annotation" : "This log event message returns the TEST_CMD_1 arguments."
+    },
+    {
+      "name" : "ICARUS.cmdDisp.OpCodeRegistered",
+      "severity" : "DIAGNOSTIC",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The opcode to register"
+        },
+        {
+          "name" : "port",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "The registration port"
+        },
+        {
+          "name" : "slot",
+          "type" : {
+            "name" : "I32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : true
+          },
+          "ref" : false,
+          "annotation" : "The dispatch slot it was placed in"
+        }
+      ],
+      "id" : 1280,
+      "format" : "Opcode 0x{x} registered to port {} slot {}"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.NoOpStringReceived",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "message",
+          "type" : {
+            "name" : "string",
+            "kind" : "string",
+            "size" : 40
+          },
+          "ref" : false,
+          "annotation" : "The NO-OP string that is generated"
+        }
+      ],
+      "id" : 1288,
+      "format" : "Received a NO-OP string={}",
+      "annotation" : "The command dispatcher has successfully received a NO-OP command from GUI with a string"
+    },
+    {
+      "name" : "ICARUS.eventLogger.ID_FILTER_ENABLED",
+      "severity" : "ACTIVITY_HI",
+      "formalParams" : [
+        {
+          "name" : "ID",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The ID filtered"
+        }
+      ],
+      "id" : 1537,
+      "format" : "ID {} is filtered.",
+      "annotation" : "Indicate ID is filtered"
+    },
+    {
+      "name" : "ICARUS.eventLogger.ID_FILTER_LIST_FULL",
+      "severity" : "WARNING_LO",
+      "formalParams" : [
+        {
+          "name" : "ID",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "The ID filtered"
+        }
+      ],
+      "id" : 1538,
+      "format" : "ID filter list is full. Cannot filter {} .",
+      "annotation" : "Attempted to add ID to full ID filter ID"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.InvalidCommand",
+      "severity" : "WARNING_HI",
+      "formalParams" : [
+        {
+          "name" : "Opcode",
+          "type" : {
+            "name" : "U32",
+            "kind" : "integer",
+            "size" : 32,
+            "signed" : false
+          },
+          "ref" : false,
+          "annotation" : "Invalid opcode"
+        }
+      ],
+      "id" : 1285,
+      "format" : "Invalid opcode 0x{x} received",
+      "annotation" : "Received an invalid opcode"
+    },
+    {
+      "name" : "ICARUS.eventLogger.SEVERITY_FILTER_STATE",
+      "severity" : "ACTIVITY_LO",
+      "formalParams" : [
+        {
+          "name" : "severity",
+          "type" : {
+            "name" : "Svc.ActiveLogger.FilterSeverity",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "The severity level"
+        },
+        {
+          "name" : "enabled",
+          "type" : {
+            "name" : "bool",
+            "kind" : "bool",
+            "size" : 8
+          },
+          "ref" : false
+        }
+      ],
+      "id" : 1536,
+      "format" : "{} filter state. {}",
+      "annotation" : "Dump severity filter state"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.MalformedCommand",
+      "severity" : "WARNING_HI",
+      "formalParams" : [
+        {
+          "name" : "Status",
+          "type" : {
+            "name" : "Fw.DeserialStatus",
+            "kind" : "qualifiedIdentifier"
+          },
+          "ref" : false,
+          "annotation" : "The deserialization error"
+        }
+      ],
+      "id" : 1284,
+      "format" : "Received malformed command packet. Status: {}",
+      "annotation" : "Received a malformed command packet"
+    }
+  ],
+  "telemetryChannels" : [
+    {
+      "name" : "ICARUS.cmdDisp.CommandsDispatched",
+      "type" : {
+        "name" : "U32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : false
+      },
+      "id" : 1280,
+      "telemetryUpdate" : "on change",
+      "annotation" : "Number of commands dispatched"
+    },
+    {
+      "name" : "ICARUS.cmdDisp.CommandErrors",
+      "type" : {
+        "name" : "U32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : false
+      },
+      "id" : 1281,
+      "telemetryUpdate" : "on change",
+      "annotation" : "Number of command errors"
+    },
+    {
+      "name" : "ICARUS.adcs.LastAltitudeCmd",
+      "type" : {
+        "name" : "F32",
+        "kind" : "float",
+        "size" : 32
+      },
+      "id" : 1024,
+      "telemetryUpdate" : "always",
+      "annotation" : "Telemetry channel for last altitude command"
+    },
+    {
+      "name" : "ICARUS.flash.BufferSize",
+      "type" : {
+        "name" : "U32",
+        "kind" : "integer",
+        "size" : 32,
+        "signed" : false
+      },
+      "id" : 768,
+      "telemetryUpdate" : "always",
+      "annotation" : "Telemetry channel for buffer size"
+    }
+  ],
+  "records" : [
+  ],
+  "containers" : [
+  ]
+}

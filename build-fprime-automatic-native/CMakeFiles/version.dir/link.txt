@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc lib/Darwin/libversion.a CMakeFiles/version.dir/versions/version.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib lib/Darwin/libversion.a

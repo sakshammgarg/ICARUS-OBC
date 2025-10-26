@@ -1,0 +1,16 @@
+[2025-10-25 22:40:25,982] [INFO] root: Logging system initialized!
+[2025-10-25 22:40:25,984] [INFO] comm: Starting uplinker/downlinker connecting to FSW using ip with fprime
+[2025-10-25 22:40:25,985] [INFO] transport: Incoming binding to: ipc:///tmp/fprime-server-in
+[2025-10-25 22:40:25,985] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:25,985] [INFO] udp_handler: Client connected to 127.0.0.1:50000
+[2025-10-25 22:40:26,495] [INFO] transport: Outgoing binding to: ipc:///tmp/fprime-server-out
+[2025-10-25 22:40:26,985] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:27,986] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:28,986] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:29,986] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:30,987] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:31,987] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:32,987] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:33,988] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:34,988] [WARNING] tcp_handler: Failed to open socket at 127.0.0.1:50000, retrying: ConnectionRefusedError: [Errno 61] Connection refused
+[2025-10-25 22:40:35,988] [INFO] tcp_handler: Client connected to 127.0.0.1:50000

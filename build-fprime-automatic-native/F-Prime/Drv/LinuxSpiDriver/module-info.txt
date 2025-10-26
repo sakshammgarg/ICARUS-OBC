@@ -1,0 +1,5 @@
+
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/LinuxSpiDriverComponentImplCommon.cpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/LinuxSpiDriverComponentImplStub.cpp
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxSpiDriver/LinuxSpiDriverComponentAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxSpiDriver/LinuxSpiDriverComponentAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Drv/LinuxSpiDriver/LinuxSpiDriverComponentAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/LinuxSpiDriver.fpp;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/Interfaces/SpiInterface.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/Events.fppi;/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Drv/LinuxSpiDriver/Telemetry.fppi
+

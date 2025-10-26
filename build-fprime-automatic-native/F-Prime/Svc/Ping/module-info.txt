@@ -1,0 +1,5 @@
+
+
+/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ping/PingPortAi.xml;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ping/PingPortAc.cpp;/Users/sakshamgarg/ICARUS-OBC/build-fprime-automatic-native/F-Prime/Svc/Ping/PingPortAc.hpp
+/Users/sakshamgarg/ICARUS-OBC/lib/fprime/Svc/Ping/Ping.fpp
+Fw/Port
