@@ -2,7 +2,7 @@
 
 **Integrated Communication And Reconnaissance CubeSat - On-Board Computer**
 
-A CubeSat flight software system built with NASA's F´ (F Prime) framework, designed for satellite operations including communications, attitude determination and control, data storage, and microcontroller management.
+A CubeSat flight software system built with NASA's F´ (F Prime) framework, designed for satellite operations including communications, altitude determination and control, data storage, and microcontroller management.
 
 ## 🌟 Features
 
