@@ -118,17 +118,6 @@ git clone https://github.com/sakshammgarg/ICARUS-OBC.git
 cd ICARUS-OBC
 ```
 
-**Verification:**
-```bash
-# Verify you're in the correct directory
-pwd          # Linux/macOS
-cd           # Windows
-
-# You should see these folders: ICARUS/, lib/, CMakeLists.txt
-ls           # Linux/macOS
-dir          # Windows
-```
-
 #### Step 2: Set Up F´ Virtual Environment
 
 **Linux/macOS:**
