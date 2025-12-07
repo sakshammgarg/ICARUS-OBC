@@ -195,7 +195,7 @@ pip install -r lib/fprime/requirements.txt
 
 #### Step 4: Generate and Build the Project
 
-**Method 1: Build from deployment directory**
+**Method 1: Build from deployment directory (recommended)**
 ```bash
 # Navigate to the deployment directory
 cd ICARUS/Top
@@ -444,18 +444,40 @@ cd ICARUS-OBC
 ```
 
 #### "externally-managed-environment" error (Ubuntu 23.04+, Debian 12+)
-This error occurs on newer Ubuntu/Debian systems that use PEP 668 to prevent breaking system Python packages.
+This error occurs on newer Ubuntu/Debian systems that use PEP 668 to prevent breaking system Python packages. It may also occur if the virtual environment was not created properly.
 
 **Solution:**
 ```bash
+# Deactivate current environment (if active)
+deactivate
+
+# Remove the broken virtual environment
+rm -rf fprime-env
+
 # Install required packages
+sudo apt update
 sudo apt install python3-full python3-venv
 
-# Then create virtual environment normally
-python3 -m venv fprime-env
+# Create virtual environment with explicit --copies flag (works better on some systems)
+python3 -m venv --copies fprime-env
+
+# Activate it
 source fprime-env/bin/activate
-pip install setuptools fprime-tools fprime-gds fprime-fpp-to-xml
+
+# Verify the activation worked
+which python3
+# Should show: /home/yourusername/ICARUS-OBC/fprime-env/bin/python3
+
+which pip
+# Should show: /home/yourusername/ICARUS-OBC/fprime-env/bin/pip
+
+# If verification passes, install packages
+pip install --upgrade pip
+pip install setuptools
+pip install fprime-tools fprime-gds fprime-fpp-to-xml
 ```
+
+**Important**: Always verify that `which python3` and `which pip` point to your virtual environment's bin directory before installing packages. If they point to `/usr/bin/`, the virtual environment is not properly activated.
 
 #### "No such file or directory" when creating venv
 The virtual environment is corrupted and needs to be recreated.
@@ -580,6 +602,12 @@ fprime-util build
 
 #### "ModuleNotFoundError: No module named 'cgi'" error (Python 3.13)
 Python 3.13 removed the `cgi` module which is still required by the Cheetah3 template engine used by F´.
+
+**Error Message:**
+```
+ModuleNotFoundError: No module named 'cgi'
+gmake[3]: *** [F-Prime/Autocoders/.../array_cpp.py] Error 1
+```
 
 **Solution (All Platforms):**
 ```bash
@@ -733,6 +761,39 @@ fprime-util generate
 fprime-util build
 ```
 
+#### CMake Path Mismatch Error (Cross-Platform Issue)
+This error typically occurs when moving the project between different operating systems (e.g., from macOS to Linux), causing the build cache to contain incorrect paths.
+
+**Error Message:**
+```
+[ERROR] Expected CMake variable FPRIME_FRAMEWORK_PATH to be set to '/home/saksham/...', 
+was actually set to '/Users/sakshamgarg/...'. This is usually caused by updating the 
+settings.ini file without purging and regenerating the accompanying build cache.
+```
+
+**Solution (All Platforms):**
+```bash
+# Navigate to the deployment directory
+cd ICARUS/Top
+
+# Purge the existing build cache
+fprime-util purge
+
+# Regenerate build files with correct paths
+fprime-util generate
+
+# Build the flight software
+fprime-util build
+```
+
+**Note**: This error commonly occurs when:
+- Moving the project from one machine to another
+- Switching between different operating systems
+- Cloning the repository on a different system
+- Using different user accounts or home directories
+
+The `fprime-util purge` command completely removes the cached build configuration, allowing CMake to regenerate it with the correct paths for your current environment.
+
 ### Runtime Issues
 
 #### Events not showing in GDS
@@ -814,3 +875,5 @@ fprime-util build
 
 - **F´ Documentation**: https://nasa.github.io/fprime/
 - **F´ GitHub**: https://github.com/nasa/fprime
+- **F´ User Guide**: https://nasa.github.io/fprime/UsersGuide/guide.html
+- **F´ Tutorial**: https://nasa.github.io/fprime/Tutorials/README.html
