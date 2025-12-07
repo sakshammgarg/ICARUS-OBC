@@ -87,26 +87,12 @@ A CubeSat flight software system built with NASA's F´ (F Prime) framework, desi
 
 ## 🎮 Usage
 
-### Running the Flight Software
-
-Start the ICARUS application:
-```bash
-./build-artifacts/Darwin/ICARUS_Top/bin/ICARUS_Top
-```
-
-Or specify a custom port:
-```bash
-./build-artifacts/Darwin/ICARUS_Top/bin/ICARUS_Top -p 50000 -a 127.0.0.1
-```
-
 ### Launching the Ground Data System
 
 In a separate terminal:
 ```bash
-fprime-gds -n --dictionary ./build-artifacts/Darwin/ICARUS_Top/dict/ICARUSTopologyDictionary.xml
+fprime-gds
 ```
-
-Access the GDS web interface at: **http://127.0.0.1:5000**
 
 ### Sending Commands
 
@@ -114,13 +100,6 @@ Access the GDS web interface at: **http://127.0.0.1:5000**
 2. Select `ICARUS.comms.SimulateReceive`
 3. Enter altitude value (e.g., `350.0`)
 4. Click **Send Command**
-
-### Viewing Events
-
-Navigate to the **Events** tab to see:
-- Command execution confirmations
-- System status messages
-- Component activity logs
 
 ## 📦 Project Structure
 ```
