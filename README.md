@@ -64,7 +64,7 @@ A CubeSat flight software system built with NASA's F´ (F Prime) framework, desi
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/yourusername/ICARUS-OBC.git
+   git clone https://github.com/sakshammgarg/ICARUS-OBC.git
    cd ICARUS-OBC
 ```
 
