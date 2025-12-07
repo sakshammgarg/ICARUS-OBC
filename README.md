@@ -183,10 +183,6 @@ pip install fprime-tools fprime-gds fprime-fpp-to-xml
 
 **All Platforms:**
 ```bash
-# Verify you're in the project directory
-pwd    # Linux/macOS - should show: /path/to/ICARUS-OBC
-cd     # Windows - should show: C:\path\to\ICARUS-OBC
-
 # If not in project directory, navigate to it
 cd ICARUS-OBC  # or full path: cd /path/to/ICARUS-OBC
 
@@ -445,12 +441,6 @@ rm -rf ICARUS-OBC    # Linux/macOS
 rmdir /s ICARUS-OBC  # Windows
 git clone https://github.com/sakshammgarg/ICARUS-OBC.git
 cd ICARUS-OBC
-```
-
-**Important**: Verify correct directory structure:
-```bash
-pwd    # Linux/macOS - should show: /path/to/ICARUS-OBC
-cd     # Windows - should show: C:\path\to\ICARUS-OBC
 ```
 
 #### "externally-managed-environment" error (Ubuntu 23.04+, Debian 12+)
